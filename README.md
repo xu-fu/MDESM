@@ -1,4 +1,5 @@
 # MDESM
 Source code for MDESM
 
-The model development code will be made public after the paper is accepted
+The main code for model training and testing has been provided. A more standardized and well-documented version is being finalized and will be made publicly available shortly.
+
