@@ -1,5 +1,6 @@
 # MDESM
-Source code for MDESM
+Source code for MDESM.
 
+Note:
 The main code for model training and testing has been provided. A more standardized and well-documented version is being finalized and will be made publicly available shortly.
 
