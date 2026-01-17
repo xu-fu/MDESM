@@ -38,7 +38,6 @@ def trainssh(root1, trainidlist1, valinlist1, root2, trainidlist2, valinlist2, E
     myweight = None
     loss = DGdisentRECaeloss(weight1=myweight, weight2=myweight, weight3=myweight)
     optimizer = optim.Adam(params=model5.parameters(), lr=1e-4) 
-    lr_sche = optim.lr_scheduler.StepLR(optimizer=optimizer, step_size=100, gamma=0.5)
     loss_list = [] 
     valloss_list = []
     VALLOSSBEST = 99999
@@ -68,7 +67,7 @@ def trainssh(root1, trainidlist1, valinlist1, root2, trainidlist2, valinlist2, E
             bloss.backward()
             optimizer.step()
 
-        lr_sche.step()  
+        
         loss_list.append(lossi / len(traindataloader))  
 
         print('epoch:{}: train loss:{}'.format(e, loss_list[-1]))
